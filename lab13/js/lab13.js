@@ -4,21 +4,25 @@
  * License: Public Domain
  */
 function fizzBuzz(){
-  for (i=1; i<= 200; i++) {
+  for (var num = 0; num<= 200; num++) {
     if (i%3 == 0) {
-      console.log("Fizz!");
+      oneLongString += num + " Fizz!<br>";
     } else if (i % 5 == 0) {
-      console.log("Buzz!");
+      oneLongString += num + " Buzz!<br>";
     } else if (i % 7 == 0) {
-      console.log("Boom!");
-    } else if (i%3 == 0) || (i % 5 == 0) {
-      console.log("FizzBuzz!");
-    } else if (i%3 == 0) || (i % 7 == 0) {
-      console.log("FizzBoom!");
-    } else if (i % 5 == 0) || (i % 7 == 0) {
-      console.log("BuzzBoom!");
-    } else if (i%3 == 0) || (i % 5 == 0) || (i % 7 == 0) {
-      console.log("FizzBuzzBoom!");
+      oneLongString += num + " Boom!<br>";
+    } else if ((i%3 == 0) && (i % 5 == 0)) {
+      oneLongString += num + " FizzBuzz!<br>";
+    } else if ((i%3 == 0) && (i % 7 == 0)) {
+      oneLongString += num + " FizzBoom!<br>";
+    } else if ((i % 5 == 0) && (i % 7 == 0)) {
+      oneLongString += num + " BuzzBoom!<br>";
+    } else if ((i%3 == 0) && (i % 5 == 0) && (i % 7 == 0)) {
+      oneLongString += num + " FizzBuzzBoom!<br>";
     }
   }
-}
+})
+
+$("#activate").click(function(){
+  $("#output").append(oneLongString);
+})
