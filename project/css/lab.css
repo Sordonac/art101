@@ -1,0 +1,7 @@
+#infoBox {
+  background-color: lightgrey;
+  width: 200px;
+  border: 15px black;
+  padding: 50px;
+  margin: 20px;
+}

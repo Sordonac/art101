@@ -1,0 +1,19 @@
+#content {
+  background-color: #BEBEBE;
+  width:600px;
+  min-height: 250px;
+  padding: 7px;
+  margin:9px;
+  border: solid 1px #127343
+  font-size: 15px;
+}
+.blue {
+  color: blue;
+}
+.orange {
+  color: orange;
+}
+#special {
+  font-weight: bold;
+  font-size: 40px;
+}
